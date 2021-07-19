@@ -1,0 +1,13 @@
+{
+  "name": "nlw-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pedro [slottwo] H. S. F. Galvão <41028091+slottwo@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
