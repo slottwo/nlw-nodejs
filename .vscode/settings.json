@@ -1,10 +1,16 @@
 {
-  // Configurações da fonte JetBrains Mono
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
-  // Demais configurações
-  "workbench.colorTheme": "Omni",
-  "workbench.iconTheme": "vs-seti",
+
+  "workbench.colorTheme": "Sweet Dracula",
+  "workbench.iconTheme": "sweet-vscode-icons",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": null
+  },
+  "editor.formatOnSave": true,
+
   "workbench.startupEditor": "newUntitledFile",
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "gutter",
@@ -14,7 +20,6 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   "breadcrumbs.enabled": true,
   "editor.parameterHints.enabled": false,
-  "editor.formatOnSave": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "emmet.syntaxProfiles": {
@@ -24,5 +29,5 @@
     "javascript": "javascriptreact"
   },
   "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true
 }
