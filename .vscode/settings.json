@@ -3,12 +3,12 @@
   "editor.fontLigatures": true,
 
   "workbench.colorTheme": "Sweet Dracula",
-  "workbench.iconTheme": "sweet-vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[typescript]": {
-    "editor.defaultFormatter": null
-  },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": null
+  // },
   "editor.formatOnSave": true,
 
   "workbench.startupEditor": "newUntitledFile",
