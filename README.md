@@ -1,6 +1,6 @@
 # nlw-nodejs
 
-## Projeto: "NLW Valoriza"
+## O Projeto: NLW Valoriza
 
 - Cadastro de Usuários
 
