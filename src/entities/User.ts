@@ -28,11 +28,7 @@ export class User {
   @UpdateDateColumn()
   updated_at: Date
 
-  /**
-   *
-   */
   constructor() {
-    // super();
     if (!this.id) {
       this.id = uuid()
     }
