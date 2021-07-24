@@ -1,7 +1,7 @@
 import { getCustomRepository } from 'typeorm'
 import { TagsRepositories } from '../repositories/TagsRepositories'
 
-export class CreateUserService {
+export class CreateTagService {
   async execute(name: string) {
     const tagRepository = getCustomRepository(TagsRepositories)
 
