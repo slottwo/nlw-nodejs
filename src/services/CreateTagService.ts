@@ -1,27 +1,29 @@
 import { getCustomRepository } from 'typeorm'
-import { Tag } from '../entities/Tag'
 import { TagsRepositories } from '../repositories/TagsRepositories'
 
 export class CreateUserService {
   async execute(name: string) {
-    const tagsRepository = getCustomRepository(TagsRepositories)
+    const tagRepository = getCustomRepository(TagsRepositories)
 
+    // trowing erros { name empty, duplicate tag name }
     if (!name) {
       throw new Error('Incorrect name')
     }
 
-    // const userAlreadyExists = await userRepository.findOne({
-    //   email
-    // })
+    const tagAlreadyExists = await tagRepository.findOne({
+      name
+    }) // SELECT * FROM TAGS WHERE NAME = 'name'
 
-    // if (userAlreadyExists) {
-    //   throw new Error('User already exists')
-    // }
+    if (tagAlreadyExists) {
+      throw new Error('Tag already exists')
+    }
 
-    const tag = tagsRepository
+    // creating tag
+    const tag = tagRepository.create({ name })
 
-    // await userRepository.save(tag)
+    // saving tag
+    await tagRepository.save(tag)
 
-    // return user
+    return tag
   }
 }
