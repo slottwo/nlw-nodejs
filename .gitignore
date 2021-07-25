@@ -2,4 +2,4 @@ yarn-error.log
 package.json
 package-lock.json
 yarn.lock
-*.sqlite
+src/database/database.sqlite
