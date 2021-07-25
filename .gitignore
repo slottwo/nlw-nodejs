@@ -3,5 +3,5 @@ package.json
 package-lock.json
 yarn.lock
 src/database/database.sqlite
-node_modules
+node_modules/
 node_modules/*
